@@ -1,4 +1,5 @@
-from pytube import YouTube
+#from pytube import YouTube
+import pytube
 #os package used for change format in some audio files
 from os.path import exists
 from os import rename 
@@ -8,16 +9,17 @@ from os import rename
 def audio_download(url):  
     
     #Make a YouTube video object
-    my_video = YouTube(url)
-
+    my_video = pytube.YouTube(url)
+    
     #Filter all streams for getting the audio formats
-    audioList = my_video.streams.filter(type="audio")
+    audioList = my_video.streams.filter(type="audio")    
+    
     #convert in list for easy format and view, and take out data from them
     audioList = list(audioList) 
 
     
     print("This are the audio qualities:")
-    print("NOTE: Only some of them are not mp3")
+    print("NOTE: Some of them are not mp3")
     print("")
     print("kbps   format")
     #Extracting the audio kbps

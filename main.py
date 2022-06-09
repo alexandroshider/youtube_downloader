@@ -6,15 +6,10 @@ from video_download_superior import highResolutionVideo as hRV
 
 if __name__ == "__main__":
     #url is URL of the video we want to download
-    #url = "https://www.youtube.com/watch?v=4s7uc_j1Sm0"
-    #url = "https://www.youtube.com/watch?v=OSyKhqDsW14"
-    #url = "https://www.youtube.com/watch?v=VM0KHroEMx8"
-    #url = "https://www.youtube.com/watch?v=HzrQIRH0uCo" 
     #url = "https://www.youtube.com/watch?v=yUtMHL_TeaQ" #Frozen Crown kings
     #url = "https://www.youtube.com/watch?v=kjN1eWhzPeA"     #Halo Wars 2 Trailer
-    #url = "https://www.youtube.com/watch?v=9gcNpI6_IYE"  #Full moon cover metallite
+    #url = "https://www.youtube.com/watch?v=9gcNpI6_IYE"  #Full moon cover metallite    
     #url = "https://www.youtube.com/watch?v=pD98a555y1U"  #Saratoga, acuerdate de mi
-    #url = "https://www.youtube.com/watch?v=kGGD62As8pY"
     #url = "https://www.youtube.com/watch?v=kGGD62As8pY"  #Just communication cover
     url = "https://www.youtube.com/watch?v=lZ5gIk98Dfs"   #Digimon Tamers op
 
