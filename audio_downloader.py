@@ -56,6 +56,7 @@ def audio_download(url):
     fileName = my_video.title
     fileName = fileName.replace("/","")
     fileName = fileName.replace("\"","")
+    fileName = fileName.replace(".","")
     fileNameMp4 = fileName + ".mp4"
     print(fileName)
     verifyExistenceOfMp4 = exists(fileNameMp4)
