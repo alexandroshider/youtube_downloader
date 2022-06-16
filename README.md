@@ -11,3 +11,8 @@ Notes: In pytube 12.1.0 you need to modify cipher.py on the line 30 delete it an
         var_regex = re.compile(r"^\$*\w+\W")
 
 Main branch: You can download a single audio or video using the url from YT
+
+Future Plans:
+
+Only donwload audio at max quality.
+
