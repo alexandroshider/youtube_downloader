@@ -6,7 +6,7 @@ from os import rename
 
 #parameter
 #url: URL of the video
-def audio_download(url):  
+def audio_download(url,qual):  
     
     #Make a YouTube video object
     my_video = pytube.YouTube(url)
@@ -39,7 +39,7 @@ def audio_download(url):
         print(str(audioList[i])[abr+5:kbps+4],"  ",audioFormat)
 
     #User choose the quality sound 
-    qual = input("Choose a qualitie (only number)\n")
+    #qual = input("Choose a qualitie (only number)\n")
     fileForFiltering = str(my_video.streams.filter(abr=qual+"kbps"))
 
     #Identify the stream tag
