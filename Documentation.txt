@@ -1,0 +1,7 @@
+#YouTube downloader
+
+The main branch of the project allows the user modify the variable url, then
+user choose audio or video download. Finally, he/she selects quality of the video. 
+
+
+##Audio quality
