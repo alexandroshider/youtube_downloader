@@ -1,7 +1,7 @@
 from pytube import YouTube
 #We need to download the audio using the audio_downloader module
 from audio_downloader import audio_download as aD
-from combine_audio_and_video import combine_audio_video_HD as cAV
+from obsolet.combine_audio_and_video import combine_audio_video_HD as cAV
 #os is used change the names of the files and using a auxiliar name 
 #then avoid that our video file be replaced with the audio file 
 #that it is downloaded with mp4 format and then changed

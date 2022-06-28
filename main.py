@@ -10,11 +10,14 @@ if __name__ == "__main__":
     #Open file links.txt, tead all lines
     file_links = open("links.txt","r")
     Lines = file_links.readlines()  
-    #loop for download video in each line.       
+    #Close file as good practice
+    file_links.close()      
+    #loop for download video in each line.     
     for line in Lines:
     #User chose only audio
         if formatDownload == 2:
             ad(str(line))
     #User chose video
         if formatDownload == 1:
-            vd720OrL(str(line))    
+            vd720OrL(str(line)) 
+       

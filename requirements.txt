@@ -1,0 +1,4 @@
+Library Packages
+* pytube 12.1.0:  In pytube 12.1.0 you need to modify cipher.py on the 
+line 30 delete it and put   var_regex = re.compile(r"^\$*\w+\W")
+* os

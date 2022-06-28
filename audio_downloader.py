@@ -11,15 +11,12 @@ def audio_download(url):
     #Make a YouTube video object
     my_video = pytube.YouTube(url)
     
-    #Filter all streams for getting the audio formats
-    audioList = my_video.streams.filter(type="audio")    
-    
-    #convert in list for easy format and view, and take out data from them
-    audioList = list(audioList) 
-
-    #User choose the quality sound 
+    #User used to choose the quality sound
+    #Now the audio is downloaded by default in 128kbps
     fileForFiltering = str(my_video.streams.filter(abr=str(128)+"kbps"))
-
+    
+    #Update: These are extra steps. Maybe it will be useful 
+    #in the future for choose quality in a simplier method
     #Identify the stream tag
     mime = str(fileForFiltering).find("mime") #this is their positions
     itag = fileForFiltering[16:mime-2]
@@ -29,12 +26,21 @@ def audio_download(url):
 
     #Downloading
     downlo.download()
-
-    #Change format of the file mp3 instead mp4 for some cases
+    """
+    Change format of the file mp3 instead mp4 for some cases
+    Warning: Maybe format won't change if the title of the 
+    video in YT have special characters. But file will still be 
+    only audio file
+    """
     fileName = my_video.title
+    #These replace section is because windows do not accept certain
+    #characters in the name of the files 
     fileName = fileName.replace("/","")
     fileName = fileName.replace("\"","")
     fileName = fileName.replace(".","")
+    fileName = fileName.replace("|","")
+    fileName = fileName.replace(":","")
+
     fileNameMp4 = fileName + ".mp4"
     print(fileName)
     verifyExistenceOfMp4 = exists(fileNameMp4)

@@ -1,12 +1,14 @@
 #YouTube downloader
 
+Version 1.1.1 (actual)
+Simplify and a improve commented code. Before this version, I published 
+I published my repository in Reddit r/learnpython. Users suggest me 
+new practices and improvements that where implemented in this repo.
 
-
-Version 1.1.0 (actual)
+Version 1.1.0 
 In this version user only needs to execute the main.py. He copy/paste the link of the video
 he/she wants to download in the file links.txt. Users only input if they want to download
 audio or video of the links in the links.txt file.
-
 
 Version 1.0.0
 The main branch of the project allows the user modify the variable url, then
